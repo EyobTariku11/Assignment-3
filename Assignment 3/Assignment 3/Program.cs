@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Assignment_3
 {
-    interface Shape
+    interface Ishape
     {
         double Calculatearea();
         double Calculateperimeter();
     }
 
-    class Circle :Shape
+    class Circle :Ishape
     {
         double radius { get; set; }
         static readonly double PI = 3.14;
@@ -36,7 +36,7 @@ namespace Assignment_3
         }
         
     }
-    class Rectangle : Shape
+    class Rectangle : Ishape
     {
         double width { get; set; }
         double height { get; set; }
@@ -157,7 +157,7 @@ namespace Assignment_3
                 }
             
             }
-            else if(n==3)
+            else 
             {
                 exit();
                 Console.ReadKey();
